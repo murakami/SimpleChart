@@ -37,20 +37,20 @@
 		563E4FA815837BEC003FD099 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		563E4FAA15837BEC003FD099 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		563E4FAC15837BEC003FD099 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		563E4FB015837BEC003FD099 /* SimpleChart-Info.plist */ = {isa = PBXFileReference; path = "SimpleChart-Info.plist"; sourceTree = "<group>"; };
+		563E4FB015837BEC003FD099 /* SimpleChart-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleChart-Info.plist"; sourceTree = "<group>"; };
 		563E4FB215837BEC003FD099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		563E4FB415837BEC003FD099 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		563E4FB615837BEC003FD099 /* SimpleChart-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleChart-Prefix.pch"; sourceTree = "<group>"; };
-		563E4FB715837BEC003FD099 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		563E4FB615837BEC003FD099 /* SimpleChart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleChart-Prefix.pch"; sourceTree = "<group>"; };
+		563E4FB715837BEC003FD099 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		563E4FB815837BEC003FD099 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		563E4FBB15837BEC003FD099 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		563E4FBD15837BEC003FD099 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		563E4FBD15837BEC003FD099 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		563E4FBE15837BEC003FD099 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		563E4FC515837BEC003FD099 /* SimpleChartTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleChartTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		563E4FC615837BEC003FD099 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		563E4FCE15837BEC003FD099 /* SimpleChartTests-Info.plist */ = {isa = PBXFileReference; path = "SimpleChartTests-Info.plist"; sourceTree = "<group>"; };
+		563E4FCE15837BEC003FD099 /* SimpleChartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleChartTests-Info.plist"; sourceTree = "<group>"; };
 		563E4FD015837BEC003FD099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		563E4FD215837BEC003FD099 /* SimpleChartTests.h */ = {isa = PBXFileReference; path = SimpleChartTests.h; sourceTree = "<group>"; };
+		563E4FD215837BEC003FD099 /* SimpleChartTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleChartTests.h; sourceTree = "<group>"; };
 		563E4FD315837BEC003FD099 /* SimpleChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleChartTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
