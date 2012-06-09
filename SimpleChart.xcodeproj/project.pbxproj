@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		563E4FA915837BEC003FD099 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4FA815837BEC003FD099 /* UIKit.framework */; };
+		563E4FAB15837BEC003FD099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4FAA15837BEC003FD099 /* Foundation.framework */; };
+		563E4FAD15837BEC003FD099 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4FAC15837BEC003FD099 /* CoreGraphics.framework */; };
+		563E4FB315837BEC003FD099 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 563E4FB115837BEC003FD099 /* InfoPlist.strings */; };
+		563E4FB515837BEC003FD099 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E4FB415837BEC003FD099 /* main.m */; };
+		563E4FB915837BEC003FD099 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E4FB815837BEC003FD099 /* AppDelegate.m */; };
+		563E4FBC15837BEC003FD099 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563E4FBA15837BEC003FD099 /* MainStoryboard.storyboard */; };
+		563E4FBF15837BEC003FD099 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E4FBE15837BEC003FD099 /* ViewController.m */; };
+		563E4FC715837BEC003FD099 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4FC615837BEC003FD099 /* SenTestingKit.framework */; };
+		563E4FC815837BEC003FD099 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4FA815837BEC003FD099 /* UIKit.framework */; };
+		563E4FC915837BEC003FD099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4FAA15837BEC003FD099 /* Foundation.framework */; };
+		563E4FD115837BEC003FD099 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 563E4FCF15837BEC003FD099 /* InfoPlist.strings */; };
+		563E4FD415837BEC003FD099 /* SimpleChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E4FD315837BEC003FD099 /* SimpleChartTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		563E4FCA15837BEC003FD099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 563E4F9B15837BEB003FD099 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 563E4FA315837BEC003FD099;
+			remoteInfo = SimpleChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		563E4FA415837BEC003FD099 /* SimpleChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		563E4FA815837BEC003FD099 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		563E4FAA15837BEC003FD099 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		563E4FAC15837BEC003FD099 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		563E4FB015837BEC003FD099 /* SimpleChart-Info.plist */ = {isa = PBXFileReference; path = "SimpleChart-Info.plist"; sourceTree = "<group>"; };
+		563E4FB215837BEC003FD099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		563E4FB415837BEC003FD099 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		563E4FB615837BEC003FD099 /* SimpleChart-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleChart-Prefix.pch"; sourceTree = "<group>"; };
+		563E4FB715837BEC003FD099 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		563E4FB815837BEC003FD099 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		563E4FBB15837BEC003FD099 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		563E4FBD15837BEC003FD099 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		563E4FBE15837BEC003FD099 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		563E4FC515837BEC003FD099 /* SimpleChartTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleChartTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		563E4FC615837BEC003FD099 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		563E4FCE15837BEC003FD099 /* SimpleChartTests-Info.plist */ = {isa = PBXFileReference; path = "SimpleChartTests-Info.plist"; sourceTree = "<group>"; };
+		563E4FD015837BEC003FD099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		563E4FD215837BEC003FD099 /* SimpleChartTests.h */ = {isa = PBXFileReference; path = SimpleChartTests.h; sourceTree = "<group>"; };
+		563E4FD315837BEC003FD099 /* SimpleChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleChartTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		563E4FA115837BEC003FD099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563E4FA915837BEC003FD099 /* UIKit.framework in Frameworks */,
+				563E4FAB15837BEC003FD099 /* Foundation.framework in Frameworks */,
+				563E4FAD15837BEC003FD099 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		563E4FC115837BEC003FD099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563E4FC715837BEC003FD099 /* SenTestingKit.framework in Frameworks */,
+				563E4FC815837BEC003FD099 /* UIKit.framework in Frameworks */,
+				563E4FC915837BEC003FD099 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		563E4F9915837BEB003FD099 = {
+			isa = PBXGroup;
+			children = (
+				563E4FAE15837BEC003FD099 /* SimpleChart */,
+				563E4FCC15837BEC003FD099 /* SimpleChartTests */,
+				563E4FA715837BEC003FD099 /* Frameworks */,
+				563E4FA515837BEC003FD099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		563E4FA515837BEC003FD099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				563E4FA415837BEC003FD099 /* SimpleChart.app */,
+				563E4FC515837BEC003FD099 /* SimpleChartTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		563E4FA715837BEC003FD099 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				563E4FA815837BEC003FD099 /* UIKit.framework */,
+				563E4FAA15837BEC003FD099 /* Foundation.framework */,
+				563E4FAC15837BEC003FD099 /* CoreGraphics.framework */,
+				563E4FC615837BEC003FD099 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		563E4FAE15837BEC003FD099 /* SimpleChart */ = {
+			isa = PBXGroup;
+			children = (
+				563E4FB715837BEC003FD099 /* AppDelegate.h */,
+				563E4FB815837BEC003FD099 /* AppDelegate.m */,
+				563E4FBA15837BEC003FD099 /* MainStoryboard.storyboard */,
+				563E4FBD15837BEC003FD099 /* ViewController.h */,
+				563E4FBE15837BEC003FD099 /* ViewController.m */,
+				563E4FAF15837BEC003FD099 /* Supporting Files */,
+			);
+			path = SimpleChart;
+			sourceTree = "<group>";
+		};
+		563E4FAF15837BEC003FD099 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				563E4FB015837BEC003FD099 /* SimpleChart-Info.plist */,
+				563E4FB115837BEC003FD099 /* InfoPlist.strings */,
+				563E4FB415837BEC003FD099 /* main.m */,
+				563E4FB615837BEC003FD099 /* SimpleChart-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		563E4FCC15837BEC003FD099 /* SimpleChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				563E4FD215837BEC003FD099 /* SimpleChartTests.h */,
+				563E4FD315837BEC003FD099 /* SimpleChartTests.m */,
+				563E4FCD15837BEC003FD099 /* Supporting Files */,
+			);
+			path = SimpleChartTests;
+			sourceTree = "<group>";
+		};
+		563E4FCD15837BEC003FD099 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				563E4FCE15837BEC003FD099 /* SimpleChartTests-Info.plist */,
+				563E4FCF15837BEC003FD099 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		563E4FA315837BEC003FD099 /* SimpleChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 563E4FD715837BEC003FD099 /* Build configuration list for PBXNativeTarget "SimpleChart" */;
+			buildPhases = (
+				563E4FA015837BEC003FD099 /* Sources */,
+				563E4FA115837BEC003FD099 /* Frameworks */,
+				563E4FA215837BEC003FD099 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleChart;
+			productName = SimpleChart;
+			productReference = 563E4FA415837BEC003FD099 /* SimpleChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		563E4FC415837BEC003FD099 /* SimpleChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 563E4FDA15837BEC003FD099 /* Build configuration list for PBXNativeTarget "SimpleChartTests" */;
+			buildPhases = (
+				563E4FC015837BEC003FD099 /* Sources */,
+				563E4FC115837BEC003FD099 /* Frameworks */,
+				563E4FC215837BEC003FD099 /* Resources */,
+				563E4FC315837BEC003FD099 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				563E4FCB15837BEC003FD099 /* PBXTargetDependency */,
+			);
+			name = SimpleChartTests;
+			productName = SimpleChartTests;
+			productReference = 563E4FC515837BEC003FD099 /* SimpleChartTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		563E4F9B15837BEB003FD099 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "ビッツ有限会社";
+			};
+			buildConfigurationList = 563E4F9E15837BEB003FD099 /* Build configuration list for PBXProject "SimpleChart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 563E4F9915837BEB003FD099;
+			productRefGroup = 563E4FA515837BEC003FD099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				563E4FA315837BEC003FD099 /* SimpleChart */,
+				563E4FC415837BEC003FD099 /* SimpleChartTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		563E4FA215837BEC003FD099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563E4FB315837BEC003FD099 /* InfoPlist.strings in Resources */,
+				563E4FBC15837BEC003FD099 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		563E4FC215837BEC003FD099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563E4FD115837BEC003FD099 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		563E4FC315837BEC003FD099 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		563E4FA015837BEC003FD099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563E4FB515837BEC003FD099 /* main.m in Sources */,
+				563E4FB915837BEC003FD099 /* AppDelegate.m in Sources */,
+				563E4FBF15837BEC003FD099 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		563E4FC015837BEC003FD099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563E4FD415837BEC003FD099 /* SimpleChartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		563E4FCB15837BEC003FD099 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 563E4FA315837BEC003FD099 /* SimpleChart */;
+			targetProxy = 563E4FCA15837BEC003FD099 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		563E4FB115837BEC003FD099 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				563E4FB215837BEC003FD099 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		563E4FBA15837BEC003FD099 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				563E4FBB15837BEC003FD099 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		563E4FCF15837BEC003FD099 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				563E4FD015837BEC003FD099 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		563E4FD515837BEC003FD099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		563E4FD615837BEC003FD099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		563E4FD815837BEC003FD099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleChart/SimpleChart-Prefix.pch";
+				INFOPLIST_FILE = "SimpleChart/SimpleChart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		563E4FD915837BEC003FD099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleChart/SimpleChart-Prefix.pch";
+				INFOPLIST_FILE = "SimpleChart/SimpleChart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		563E4FDB15837BEC003FD099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleChart.app/SimpleChart";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleChart/SimpleChart-Prefix.pch";
+				INFOPLIST_FILE = "SimpleChartTests/SimpleChartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		563E4FDC15837BEC003FD099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleChart.app/SimpleChart";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleChart/SimpleChart-Prefix.pch";
+				INFOPLIST_FILE = "SimpleChartTests/SimpleChartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		563E4F9E15837BEB003FD099 /* Build configuration list for PBXProject "SimpleChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				563E4FD515837BEC003FD099 /* Debug */,
+				563E4FD615837BEC003FD099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		563E4FD715837BEC003FD099 /* Build configuration list for PBXNativeTarget "SimpleChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				563E4FD815837BEC003FD099 /* Debug */,
+				563E4FD915837BEC003FD099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		563E4FDA15837BEC003FD099 /* Build configuration list for PBXNativeTarget "SimpleChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				563E4FDB15837BEC003FD099 /* Debug */,
+				563E4FDC15837BEC003FD099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 563E4F9B15837BEB003FD099 /* Project object */;
+}
