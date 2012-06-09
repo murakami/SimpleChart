@@ -20,7 +20,7 @@
 		563E4FC915837BEC003FD099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4FAA15837BEC003FD099 /* Foundation.framework */; };
 		563E4FD115837BEC003FD099 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 563E4FCF15837BEC003FD099 /* InfoPlist.strings */; };
 		563E4FD415837BEC003FD099 /* SimpleChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E4FD315837BEC003FD099 /* SimpleChartTests.m */; };
-		563E4FE115837F41003FD099 /* S7GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E4FDF15837F41003FD099 /* S7GraphView.m */; };
+		563E4FE115837F41003FD099 /* S7GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E4FDF15837F41003FD099 /* S7GraphView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

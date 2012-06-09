@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "S7GraphView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <S7GraphViewDataSource>
+
+@property (nonatomic, retain) IBOutlet S7GraphView  *s7graphView;
 
 @end
