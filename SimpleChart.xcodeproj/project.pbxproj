@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560704B71584D841002425E8 /* SimpleChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 560704B61584D841002425E8 /* SimpleChartView.m */; };
 		563E4FA915837BEC003FD099 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4FA815837BEC003FD099 /* UIKit.framework */; };
 		563E4FAB15837BEC003FD099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4FAA15837BEC003FD099 /* Foundation.framework */; };
 		563E4FAD15837BEC003FD099 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4FAC15837BEC003FD099 /* CoreGraphics.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		560704B51584D841002425E8 /* SimpleChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleChartView.h; sourceTree = "<group>"; };
+		560704B61584D841002425E8 /* SimpleChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleChartView.m; sourceTree = "<group>"; };
 		563E4FA415837BEC003FD099 /* SimpleChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		563E4FA815837BEC003FD099 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		563E4FAA15837BEC003FD099 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,6 +123,8 @@
 				563E4FBA15837BEC003FD099 /* MainStoryboard.storyboard */,
 				563E4FBD15837BEC003FD099 /* ViewController.h */,
 				563E4FBE15837BEC003FD099 /* ViewController.m */,
+				560704B51584D841002425E8 /* SimpleChartView.h */,
+				560704B61584D841002425E8 /* SimpleChartView.m */,
 				563E4FDD15837F41003FD099 /* s7graphview */,
 				563E4FAF15837BEC003FD099 /* Supporting Files */,
 			);
@@ -277,6 +282,7 @@
 				563E4FB915837BEC003FD099 /* AppDelegate.m in Sources */,
 				563E4FBF15837BEC003FD099 /* ViewController.m in Sources */,
 				563E4FE115837F41003FD099 /* S7GraphView.m in Sources */,
+				560704B71584D841002425E8 /* SimpleChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +452,7 @@
 				563E4FD915837BEC003FD099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		563E4FDA15837BEC003FD099 /* Build configuration list for PBXNativeTarget "SimpleChartTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +461,7 @@
 				563E4FDC15837BEC003FD099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
