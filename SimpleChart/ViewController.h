@@ -11,6 +11,6 @@
 
 @interface ViewController : UIViewController <S7GraphViewDataSource>
 
-@property (nonatomic, retain) IBOutlet S7GraphView  *s7graphView;
+@property (nonatomic, strong) IBOutlet S7GraphView  *s7graphView;
 
 @end
