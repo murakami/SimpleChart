@@ -309,10 +309,19 @@
 			y = [[values objectAtIndex:valueIndex + 1] intValue] * stepY;
 			
 			CGPoint endPoint = CGPointMake(x + offsetX, self.frame.size.height - y - offsetY);
-			
+
+#if 1
 			CGContextMoveToPoint(c, startPoint.x, startPoint.y);
 			CGContextAddLineToPoint(c, endPoint.x, endPoint.y);
 			CGContextClosePath(c);
+#else
+            if (([[values objectAtIndex:valueIndex] intValue] != 0)
+                && ([[values objectAtIndex:valueIndex + 1] intValue] != 0)) {
+                CGContextMoveToPoint(c, startPoint.x, startPoint.y);
+                CGContextAddLineToPoint(c, endPoint.x, endPoint.y);
+                CGContextClosePath(c);
+            }
+#endif
 			
 			CGContextSetStrokeColorWithColor(c, plotColor);
 			CGContextStrokePath(c);
