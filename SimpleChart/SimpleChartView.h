@@ -8,6 +8,42 @@
 
 #import <UIKit/UIKit.h>
 
+#ifndef RGB
+#define RGB(R,G,B) [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:1.0f]
+#endif
+
+@class SimpleChartView;
+
+@protocol SimpleChartViewDataSource <NSObject>
+
+@optional
+- (BOOL)simpleChartView:(SimpleChartView *)simpleChartView shouldFillPlot:(NSUInteger)plotIndex;
+
+@required
+- (NSUInteger)simpleChartViewNumberOfPlots:(SimpleChartView *)simpleChartView;
+- (NSArray *)simpleChartViewXValues:(SimpleChartView *)simpleChartView;
+- (NSArray *)simpleChartView:(SimpleChartView *)simpleChartView yValuesForPlot:(NSUInteger)plotIndex;
+
+@end
+
 @interface SimpleChartView : UIView
+
+@property (nonatomic, weak) IBOutlet id<SimpleChartViewDataSource> dataSource;
+@property (nonatomic, strong) IBOutlet NSFormatter *xValuesFormatter;
+@property (nonatomic, strong) IBOutlet NSFormatter *yValuesFormatter;
+@property (nonatomic, assign) BOOL drawAxisX;
+@property (nonatomic, assign) BOOL drawAxisY;
+@property (nonatomic, assign) BOOL drawGridX;
+@property (nonatomic, assign) BOOL drawGridY;
+@property (nonatomic, strong) UIColor *xValuesColor;
+@property (nonatomic, strong) UIColor *yValuesColor;
+@property (nonatomic, strong) UIColor *gridXColor;
+@property (nonatomic, strong) UIColor *gridYColor;
+@property (nonatomic, assign) BOOL drawInfo;
+@property (nonatomic, copy) NSString *info;
+@property (nonatomic, strong) UIColor *infoColor;
+
++ (UIColor *)colorByIndex:(NSInteger)index;
+- (void)reloadData;
 
 @end

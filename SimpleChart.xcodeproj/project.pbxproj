@@ -21,7 +21,6 @@
 		563E4FC915837BEC003FD099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4FAA15837BEC003FD099 /* Foundation.framework */; };
 		563E4FD115837BEC003FD099 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 563E4FCF15837BEC003FD099 /* InfoPlist.strings */; };
 		563E4FD415837BEC003FD099 /* SimpleChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E4FD315837BEC003FD099 /* SimpleChartTests.m */; };
-		563E4FE115837F41003FD099 /* S7GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E4FDF15837F41003FD099 /* S7GraphView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +55,6 @@
 		563E4FD015837BEC003FD099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		563E4FD215837BEC003FD099 /* SimpleChartTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleChartTests.h; sourceTree = "<group>"; };
 		563E4FD315837BEC003FD099 /* SimpleChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleChartTests.m; sourceTree = "<group>"; };
-		563E4FDE15837F41003FD099 /* S7GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S7GraphView.h; sourceTree = "<group>"; };
-		563E4FDF15837F41003FD099 /* S7GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S7GraphView.m; sourceTree = "<group>"; };
-		563E4FE015837F41003FD099 /* S7Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S7Macros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +121,6 @@
 				563E4FBE15837BEC003FD099 /* ViewController.m */,
 				560704B51584D841002425E8 /* SimpleChartView.h */,
 				560704B61584D841002425E8 /* SimpleChartView.m */,
-				563E4FDD15837F41003FD099 /* s7graphview */,
 				563E4FAF15837BEC003FD099 /* Supporting Files */,
 			);
 			path = SimpleChart;
@@ -159,16 +154,6 @@
 				563E4FCF15837BEC003FD099 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		563E4FDD15837F41003FD099 /* s7graphview */ = {
-			isa = PBXGroup;
-			children = (
-				563E4FDE15837F41003FD099 /* S7GraphView.h */,
-				563E4FDF15837F41003FD099 /* S7GraphView.m */,
-				563E4FE015837F41003FD099 /* S7Macros.h */,
-			);
-			path = s7graphview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +266,6 @@
 				563E4FB515837BEC003FD099 /* main.m in Sources */,
 				563E4FB915837BEC003FD099 /* AppDelegate.m in Sources */,
 				563E4FBF15837BEC003FD099 /* ViewController.m in Sources */,
-				563E4FE115837F41003FD099 /* S7GraphView.m in Sources */,
 				560704B71584D841002425E8 /* SimpleChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

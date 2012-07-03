@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "S7GraphView.h"
+#import "SimpleChartView.h"
 
-@interface ViewController : UIViewController <S7GraphViewDataSource>
+@interface ViewController : UIViewController <SimpleChartViewDataSource>
 
-@property (nonatomic, strong) IBOutlet S7GraphView  *s7graphView;
+@property (nonatomic, strong) IBOutlet SimpleChartView  *simpleChartView;
 
 @end

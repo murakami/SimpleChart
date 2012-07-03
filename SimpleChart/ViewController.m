@@ -14,7 +14,7 @@
 
 @implementation ViewController
 
-@synthesize s7graphView = _s7graphView;
+@synthesize simpleChartView = _simpleChartView;
 
 - (void)viewDidLoad
 {
@@ -22,50 +22,46 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-    //self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    //self.s7graphView = [[S7GraphView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	//self.view = self.s7graphView;
-	self.s7graphView.dataSource = self;
-    //self.view.backgroundColor = [UIColor yellowColor];
+	self.simpleChartView.dataSource = self;
 
     NSNumberFormatter *numberFormatter = [NSNumberFormatter new];
     [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
     [numberFormatter setMinimumFractionDigits:0];
     [numberFormatter setMaximumFractionDigits:0];
     
-    self.s7graphView.yValuesFormatter = numberFormatter;
+    self.simpleChartView.yValuesFormatter = numberFormatter;
     
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
     [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
     [dateFormatter setDateStyle:NSDateFormatterNoStyle];
     [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];
     
-    self.s7graphView.xValuesFormatter = dateFormatter;
+    self.simpleChartView.xValuesFormatter = dateFormatter;
         
-    self.s7graphView.backgroundColor = [UIColor blackColor];
+    self.simpleChartView.backgroundColor = [UIColor blackColor];
     
-    self.s7graphView.drawAxisX = YES;
-    self.s7graphView.drawAxisY = YES;
-    self.s7graphView.drawGridX = YES;
-    self.s7graphView.drawGridY = YES;
+    self.simpleChartView.drawAxisX = YES;
+    self.simpleChartView.drawAxisY = YES;
+    self.simpleChartView.drawGridX = YES;
+    self.simpleChartView.drawGridY = YES;
     
-    self.s7graphView.xValuesColor = [UIColor whiteColor];
-    self.s7graphView.yValuesColor = [UIColor whiteColor];
+    self.simpleChartView.xValuesColor = [UIColor whiteColor];
+    self.simpleChartView.yValuesColor = [UIColor whiteColor];
     
-    self.s7graphView.gridXColor = [UIColor whiteColor];
-    self.s7graphView.gridYColor = [UIColor whiteColor];
+    self.simpleChartView.gridXColor = [UIColor whiteColor];
+    self.simpleChartView.gridYColor = [UIColor whiteColor];
     
-    self.s7graphView.drawInfo = NO;
-    self.s7graphView.info = @"Load";
-    self.s7graphView.infoColor = [UIColor whiteColor];
+    self.simpleChartView.drawInfo = NO;
+    self.simpleChartView.info = @"Load";
+    self.simpleChartView.infoColor = [UIColor whiteColor];
     
-    [self.s7graphView reloadData];
+    [self.simpleChartView reloadData];
 }
 
 - (void)viewDidUnload
 {
     DBGMSG(@"%s", __func__);
-    self.s7graphView = nil;
+    self.simpleChartView = nil;
 
     [super viewDidUnload];
     // Release any retained subviews of the main view.
@@ -79,14 +75,14 @@
 #pragma mark -
 #pragma mark protocol S7GraphViewDataSource methods
 
-- (NSUInteger)graphViewNumberOfPlots:(S7GraphView *)graphView
+- (NSUInteger)simpleChartViewNumberOfPlots:(SimpleChartView *)simpleChartView
 {
     /* Return the number of plots you are going to have in the view. 1+ */
     DBGMSG(@"%s", __func__);
 	return 3;
 }
 
-- (NSArray *)graphViewXValues:(S7GraphView *)graphView
+- (NSArray *)simpleChartViewXValues:(SimpleChartView *)simpleChartView
 {
     /* An array of objects that will be further formatted to be displayed on the X-axis.
 	 The number of elements should be equal to the number of points you have for every plot. */
@@ -110,7 +106,7 @@
 	return array;
 }
 
-- (NSArray *)graphView:(S7GraphView *)graphView yValuesForPlot:(NSUInteger)plotIndex
+- (NSArray *)simpleChartView:(SimpleChartView *)simpleChartView yValuesForPlot:(NSUInteger)plotIndex
 {
     /* Return the values for a specific graph. Each plot is meant to have equal number of points.
 	 And this amount should be equal to the amount of elements you return from graphViewXValues: method. */
@@ -180,12 +176,10 @@
 	return array;
 }
 
-/*
- - (BOOL)graphView:(S7GraphView *)graphView shouldFillPlot:(NSUInteger)plotIndex
- {
- DBGMSG(@"%s", __func__);
- return YES;
- }
- */
+- (BOOL)simpleChartView:(SimpleChartView *)simpleChartView shouldFillPlot:(NSUInteger)plotIndex
+{
+    DBGMSG(@"%s", __func__);
+    return NO;
+}
 
 @end

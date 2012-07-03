@@ -16,6 +16,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="simpleChartView" destination="3" id="An3-uD-IhF"/>
+                    </connections>
                 </viewController>
             </objects>
         </scene>
@@ -24,21 +27,18 @@
         <class className="NSFormatter" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSFormatter.h"/>
         </class>
-        <class className="S7GraphView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/S7GraphView.h"/>
+        <class className="SimpleChartView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SimpleChartView.h"/>
             <relationships>
                 <relationship kind="outlet" name="dataSource"/>
                 <relationship kind="outlet" name="xValuesFormatter" candidateClass="NSFormatter"/>
                 <relationship kind="outlet" name="yValuesFormatter" candidateClass="NSFormatter"/>
             </relationships>
         </class>
-        <class className="SimpleChartView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SimpleChartView.h"/>
-        </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="s7graphView" candidateClass="S7GraphView"/>
+                <relationship kind="outlet" name="simpleChartView" candidateClass="SimpleChartView"/>
             </relationships>
         </class>
     </classes>
