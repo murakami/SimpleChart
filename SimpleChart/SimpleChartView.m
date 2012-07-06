@@ -109,9 +109,8 @@
     DBGMSG(@"%s", __func__);
     // Drawing code
 
-    CGContextRef c = UIGraphicsGetCurrentContext();
-	CGContextSetFillColorWithColor(c, self.backgroundColor.CGColor);
-	CGContextFillRect(c, rect);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [self drawBackground:context rect:rect];
 	
 	NSUInteger numberOfPlots = [self.dataSource simpleChartViewNumberOfPlots:self];
 	
@@ -169,18 +168,18 @@
 			lineDash[0] = 6.0f;
 			lineDash[1] = 6.0f;
 			
-			CGContextSetLineDash(c, 0.0f, lineDash, 2);
-			CGContextSetLineWidth(c, 0.1f);
+			CGContextSetLineDash(context, 0.0f, lineDash, 2);
+			CGContextSetLineWidth(context, 0.1f);
 			
 			CGPoint startPoint = CGPointMake(offsetX, self.frame.size.height - y - offsetY);
 			CGPoint endPoint = CGPointMake(self.frame.size.width - offsetX, self.frame.size.height - y - offsetY);
 			
-			CGContextMoveToPoint(c, startPoint.x, startPoint.y);
-			CGContextAddLineToPoint(c, endPoint.x, endPoint.y);
-			CGContextClosePath(c);
+			CGContextMoveToPoint(context, startPoint.x, startPoint.y);
+			CGContextAddLineToPoint(context, endPoint.x, endPoint.y);
+			CGContextClosePath(context);
 			
-			CGContextSetStrokeColorWithColor(c, self.gridYColor.CGColor);
-			CGContextStrokePath(c);
+			CGContextSetStrokeColorWithColor(context, self.gridYColor.CGColor);
+			CGContextStrokePath(context);
 		}
 		
 		if (i > 0 && _drawAxisY) {
@@ -250,18 +249,18 @@
 			lineDash[0] = 6.0f;
 			lineDash[1] = 6.0f;
 			
-			CGContextSetLineDash(c, 0.0f, lineDash, 2);
-			CGContextSetLineWidth(c, 0.1f);
+			CGContextSetLineDash(context, 0.0f, lineDash, 2);
+			CGContextSetLineWidth(context, 0.1f);
 			
 			CGPoint startPoint = CGPointMake(x + offsetX, offsetY);
 			CGPoint endPoint = CGPointMake(x + offsetX, self.frame.size.height - offsetY);
 			
-			CGContextMoveToPoint(c, startPoint.x, startPoint.y);
-			CGContextAddLineToPoint(c, endPoint.x, endPoint.y);
-			CGContextClosePath(c);
+			CGContextMoveToPoint(context, startPoint.x, startPoint.y);
+			CGContextAddLineToPoint(context, endPoint.x, endPoint.y);
+			CGContextClosePath(context);
 			
-			CGContextSetStrokeColorWithColor(c, self.gridXColor.CGColor);
-			CGContextStrokePath(c);
+			CGContextSetStrokeColorWithColor(context, self.gridXColor.CGColor);
+			CGContextStrokePath(context);
 		}
 		
 		if (_drawAxisX) {
@@ -283,7 +282,7 @@
 	
 	stepX = (self.frame.size.width - (offsetX * 2)) / (xValuesCount - 1);
 	
-	CGContextSetLineDash(c, 0, NULL, 0);
+	CGContextSetLineDash(context, 0, NULL, 0);
 	
 	for (NSUInteger plotIndex = 0; plotIndex < numberOfPlots; plotIndex++) {
 		
@@ -294,14 +293,14 @@
 			shouldFill = [self.dataSource simpleChartView:self shouldFillPlot:plotIndex];
 		}
 		
-		CGColorRef plotColor = [SimpleChartView colorByIndex:plotIndex].CGColor;
+		CGColorRef plotColor = [self uiColorByIndex:plotIndex].CGColor;
 		
 		for (NSUInteger valueIndex = 0; valueIndex < values.count - 1; valueIndex++) {
 			
 			NSUInteger x = valueIndex * stepX;
 			NSUInteger y = [[values objectAtIndex:valueIndex] intValue] * stepY;
 			
-			CGContextSetLineWidth(c, 1.5f);
+			CGContextSetLineWidth(context, 1.5f);
 			
 			CGPoint startPoint = CGPointMake(x + offsetX, self.frame.size.height - y - offsetY);
 			
@@ -310,32 +309,32 @@
 			
 			CGPoint endPoint = CGPointMake(x + offsetX, self.frame.size.height - y - offsetY);
 
-#if 1
-			CGContextMoveToPoint(c, startPoint.x, startPoint.y);
-			CGContextAddLineToPoint(c, endPoint.x, endPoint.y);
-			CGContextClosePath(c);
+#if 0
+			CGContextMoveToPoint(context, startPoint.x, startPoint.y);
+			CGContextAddLineToPoint(context, endPoint.x, endPoint.y);
+			CGContextClosePath(context);
 #else
             if (([[values objectAtIndex:valueIndex] intValue] != 0)
                 && ([[values objectAtIndex:valueIndex + 1] intValue] != 0)) {
-                CGContextMoveToPoint(c, startPoint.x, startPoint.y);
-                CGContextAddLineToPoint(c, endPoint.x, endPoint.y);
-                CGContextClosePath(c);
+                CGContextMoveToPoint(context, startPoint.x, startPoint.y);
+                CGContextAddLineToPoint(context, endPoint.x, endPoint.y);
+                CGContextClosePath(context);
             }
 #endif
 			
-			CGContextSetStrokeColorWithColor(c, plotColor);
-			CGContextStrokePath(c);
+			CGContextSetStrokeColorWithColor(context, plotColor);
+			CGContextStrokePath(context);
 			
 			if (shouldFill) {
 				
-				CGContextMoveToPoint(c, startPoint.x, self.frame.size.height - offsetY);
-				CGContextAddLineToPoint(c, startPoint.x, startPoint.y);
-				CGContextAddLineToPoint(c, endPoint.x, endPoint.y);
-				CGContextAddLineToPoint(c, endPoint.x, self.frame.size.height - offsetY);
-				CGContextClosePath(c);
+				CGContextMoveToPoint(context, startPoint.x, self.frame.size.height - offsetY);
+				CGContextAddLineToPoint(context, startPoint.x, startPoint.y);
+				CGContextAddLineToPoint(context, endPoint.x, endPoint.y);
+				CGContextAddLineToPoint(context, endPoint.x, self.frame.size.height - offsetY);
+				CGContextClosePath(context);
 				
-				CGContextSetFillColorWithColor(c, plotColor);
-				CGContextFillPath(c);
+				CGContextSetFillColorWithColor(context, plotColor);
+				CGContextFillPath(context);
 			}
 		}
 	}
@@ -362,47 +361,17 @@
 		case 5: uiColor = [UIColor magentaColor]; break;
 		case 6: uiColor = [UIColor orangeColor]; break;
 		case 7: uiColor = [UIColor purpleColor]; break;
-		default: uiColor = [UIColor brownColor]; break;
+		case 8: uiColor = [UIColor brownColor]; break;
+		case 9: uiColor = [UIColor whiteColor]; break;
+        default: uiColor = [UIColor lightGrayColor]; break;
 	}	
 	return uiColor;
 }
 
 - (void)drawBackground:(CGContextRef)context rect:(CGRect)rect
 {
-    CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
+    CGContextSetFillColorWithColor(context, self.backgroundColor.CGColor);
 	CGContextFillRect(context, rect);
-}
-
-+ (UIColor *)colorByIndex:(NSInteger)index
-{
-	UIColor *color;
-	
-	switch (index) {
-		case 0: color = RGB(5, 141, 191);
-			break;
-		case 1: color = RGB(80, 180, 50);
-			break;		
-		case 2: color = RGB(255, 102, 0);
-			break;
-		case 3: color = RGB(255, 158, 1);
-			break;
-		case 4: color = RGB(252, 210, 2);
-			break;
-		case 5: color = RGB(248, 255, 1);
-			break;
-		case 6: color = RGB(176, 222, 9);
-			break;
-		case 7: color = RGB(106, 249, 196);
-			break;
-		case 8: color = RGB(178, 222, 255);
-			break;
-		case 9: color = RGB(4, 210, 21);
-			break;
-		default: color = RGB(204, 204, 204);
-			break;
-	}
-	
-	return color;
 }
 
 - (void)reloadData

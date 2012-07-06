@@ -37,8 +37,6 @@
     [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];
     
     self.simpleChartView.xValuesFormatter = dateFormatter;
-        
-    self.simpleChartView.backgroundColor = [UIColor blackColor];
     
     self.simpleChartView.drawAxisX = YES;
     self.simpleChartView.drawAxisY = YES;
