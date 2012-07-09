@@ -11,15 +11,21 @@
 @class SimpleChartView;
 
 @protocol SimpleChartViewDataSource <NSObject>
-
+- (NSUInteger)numberOfPlotsInSimpleChartView:(SimpleChartView *)simpleChartView;
+- (NSUInteger)numberOfXValuesInSimpleChartView:(SimpleChartView *)simpleChartView;
+- (NSUInteger)simpleChartView:(SimpleChartView *)simpleChartView numberOfYValuesInPlot:(NSUInteger)plotIndex;
+- (id)simpleChartView:(SimpleChartView *)simpleChartView XValueAtIndex:(NSUInteger)index;
+- (NSNumber *)simpleChartView:(SimpleChartView *)simpleChartView YValueAtPlot:(NSUInteger)plotIndex value:(NSUInteger)valueIndex;
 @optional
 - (BOOL)simpleChartView:(SimpleChartView *)simpleChartView shouldFillPlot:(NSUInteger)plotIndex;
+//@required
+//- (NSUInteger)simpleChartViewNumberOfPlots:(SimpleChartView *)simpleChartView;
+//- (NSArray *)simpleChartViewXValues:(SimpleChartView *)simpleChartView;
+//- (NSArray *)simpleChartView:(SimpleChartView *)simpleChartView yValuesForPlot:(NSUInteger)plotIndex;
+@end
 
-@required
-- (NSUInteger)simpleChartViewNumberOfPlots:(SimpleChartView *)simpleChartView;
-- (NSArray *)simpleChartViewXValues:(SimpleChartView *)simpleChartView;
-- (NSArray *)simpleChartView:(SimpleChartView *)simpleChartView yValuesForPlot:(NSUInteger)plotIndex;
-
+@protocol SimpleChartViewDelegate
+@optional
 @end
 
 @interface SimpleChartView : UIView

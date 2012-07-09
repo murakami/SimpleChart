@@ -112,7 +112,7 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     [self drawBackground:context rect:rect];
 	
-	NSUInteger numberOfPlots = [self.dataSource simpleChartViewNumberOfPlots:self];
+	NSUInteger numberOfPlots = [self.dataSource numberOfPlotsInSimpleChartView:self];
 	
 	if (!numberOfPlots) {
 		return;
@@ -127,13 +127,10 @@
 	UIFont *font = [UIFont systemFontOfSize:11.0f];
 	
 	for (NSUInteger plotIndex = 0; plotIndex < numberOfPlots; plotIndex++) {
-		
-		NSArray *values = [self.dataSource simpleChartView:self yValuesForPlot:plotIndex];
-		
-		for (NSUInteger valueIndex = 0; valueIndex < values.count; valueIndex++) {
-			
-			if ([[values objectAtIndex:valueIndex] floatValue] > maxY) {
-				maxY = [[values objectAtIndex:valueIndex] floatValue];
+		NSUInteger  valuesCount = [self.dataSource simpleChartView:self numberOfYValuesInPlot:plotIndex];
+		for (NSUInteger valueIndex = 0; valueIndex < valuesCount; valueIndex++) {
+            if ([[self.dataSource simpleChartView:self YValueAtPlot:plotIndex value:valueIndex] floatValue] > maxY) {
+				maxY = [[self.dataSource simpleChartView:self YValueAtPlot:plotIndex value:valueIndex] floatValue];
 			}
 		}
 	}
@@ -203,8 +200,7 @@
 	
 	NSUInteger maxStep;
 	
-	NSArray *xValues = [self.dataSource simpleChartViewXValues:self];
-	NSUInteger xValuesCount = xValues.count;
+	NSUInteger xValuesCount = [self.dataSource numberOfXValuesInSimpleChartView:self];
 	
 	if (xValuesCount > 5) {
 		
@@ -265,7 +261,7 @@
 		
 		if (_drawAxisX) {
 			
-			id valueToFormat = [xValues objectAtIndex:index];
+			id valueToFormat = [self.dataSource simpleChartView:self XValueAtIndex:index];
 			NSString *valueString;
 			
 			if (_xValuesFormatter) {
@@ -286,7 +282,7 @@
 	
 	for (NSUInteger plotIndex = 0; plotIndex < numberOfPlots; plotIndex++) {
 		
-		NSArray *values = [self.dataSource simpleChartView:self yValuesForPlot:plotIndex];
+		//NSArray *values = [self.dataSource simpleChartView:self yValuesForPlot:plotIndex];
 		BOOL shouldFill = NO;
 		
 		if ([self.dataSource respondsToSelector:@selector(simpleChartView:shouldFillPlot:)]) {
@@ -295,32 +291,27 @@
 		
 		CGColorRef plotColor = [self uiColorByIndex:plotIndex].CGColor;
 		
-		for (NSUInteger valueIndex = 0; valueIndex < values.count - 1; valueIndex++) {
+        NSUInteger  valuesCount = [self.dataSource simpleChartView:self numberOfYValuesInPlot:plotIndex];
+		for (NSUInteger valueIndex = 0; valueIndex < valuesCount - 1; valueIndex++) {
 			
 			NSUInteger x = valueIndex * stepX;
-			NSUInteger y = [[values objectAtIndex:valueIndex] intValue] * stepY;
+			NSUInteger y = [[self.dataSource simpleChartView:self YValueAtPlot:plotIndex value:valueIndex] intValue] * stepY;
 			
 			CGContextSetLineWidth(context, 1.5f);
 			
 			CGPoint startPoint = CGPointMake(x + offsetX, self.frame.size.height - y - offsetY);
 			
 			x = (valueIndex + 1) * stepX;
-			y = [[values objectAtIndex:valueIndex + 1] intValue] * stepY;
+			y = [[self.dataSource simpleChartView:self YValueAtPlot:plotIndex value:valueIndex + 1] intValue] * stepY;
 			
 			CGPoint endPoint = CGPointMake(x + offsetX, self.frame.size.height - y - offsetY);
 
-#if 0
-			CGContextMoveToPoint(context, startPoint.x, startPoint.y);
-			CGContextAddLineToPoint(context, endPoint.x, endPoint.y);
-			CGContextClosePath(context);
-#else
-            if (([[values objectAtIndex:valueIndex] intValue] != 0)
-                && ([[values objectAtIndex:valueIndex + 1] intValue] != 0)) {
+            if (([[self.dataSource simpleChartView:self YValueAtPlot:plotIndex value:valueIndex] intValue] != 0)
+                && ([[self.dataSource simpleChartView:self YValueAtPlot:plotIndex value:valueIndex + 1] intValue] != 0)) {
                 CGContextMoveToPoint(context, startPoint.x, startPoint.y);
                 CGContextAddLineToPoint(context, endPoint.x, endPoint.y);
                 CGContextClosePath(context);
             }
-#endif
 			
 			CGContextSetStrokeColorWithColor(context, plotColor);
 			CGContextStrokePath(context);
