@@ -55,6 +55,7 @@
 		563E4FD015837BEC003FD099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		563E4FD215837BEC003FD099 /* SimpleChartTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleChartTests.h; sourceTree = "<group>"; };
 		563E4FD315837BEC003FD099 /* SimpleChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleChartTests.m; sourceTree = "<group>"; };
+		56B9659E15B170660062453C /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 		563E4F9915837BEB003FD099 = {
 			isa = PBXGroup;
 			children = (
+				56B9659E15B170660062453C /* README */,
 				563E4FAE15837BEC003FD099 /* SimpleChart */,
 				563E4FCC15837BEC003FD099 /* SimpleChartTests */,
 				563E4FA715837BEC003FD099 /* Frameworks */,

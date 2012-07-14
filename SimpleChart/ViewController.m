@@ -59,8 +59,8 @@
     self.simpleChartView.gridXColor = [UIColor whiteColor];
     self.simpleChartView.gridYColor = [UIColor whiteColor];
     
-    self.simpleChartView.drawInfo = NO;
-    self.simpleChartView.info = @"Load";
+    self.simpleChartView.drawInfo = YES;
+    self.simpleChartView.info = @"SimpleChart demonstration";
     self.simpleChartView.infoColor = [UIColor whiteColor];
     
     [self.simpleChartView reloadData];
@@ -155,6 +155,56 @@
     [self.forecastYValues addObject:[NSNumber numberWithInt:3095]];
     [self.forecastYValues addObject:[NSNumber numberWithInt:3020]];
     [self.forecastYValues addObject:[NSNumber numberWithInt:2828]];
+}
+
+- (IBAction)drawAxisX:(id)sender
+{
+    if (self.simpleChartView.drawAxisX == YES)
+        self.simpleChartView.drawAxisX = NO;
+    else
+        self.simpleChartView.drawAxisX = YES;
+    
+    [self.simpleChartView reloadData];
+}
+
+- (IBAction)drawAxisY:(id)sender
+{
+    if (self.simpleChartView.drawAxisY == YES)
+        self.simpleChartView.drawAxisY = NO;
+    else
+        self.simpleChartView.drawAxisY = YES;
+
+    [self.simpleChartView reloadData];
+}
+
+- (IBAction)drawGridX:(id)sender
+{
+    if (self.simpleChartView.drawGridX == YES)
+        self.simpleChartView.drawGridX = NO;
+    else
+        self.simpleChartView.drawGridX = YES;
+
+    [self.simpleChartView reloadData];
+}
+
+- (IBAction)drawGridY:(id)sender
+{
+    if (self.simpleChartView.drawGridY == YES)
+        self.simpleChartView.drawGridY = NO;
+    else
+        self.simpleChartView.drawGridY = YES;
+
+    [self.simpleChartView reloadData];
+}
+
+- (IBAction)drawInfo:(id)sender
+{
+    if (self.simpleChartView.drawInfo == YES)
+        self.simpleChartView.drawInfo = NO;
+    else
+        self.simpleChartView.drawInfo = YES;
+    
+    [self.simpleChartView reloadData];
 }
 
 #pragma mark -

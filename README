@@ -1,12 +1,23 @@
 SimpleChart
 by Yukio MURAKAMI - http://www.bitz.co.jp/
 
+These source codes based on s7graphview.
+s7graphview make you be able to draw graph on iOS.
+For more about s7graphview, see (http://code.google.com/p/s7graphview/).
+Now, I cannot find original project page.
 
 About SimpleChart
 =================
+* Protocol / Delegate was referring to UITableView.
+* Modular.
 
-This application is a sample code.
+How to use
+==========
+See demo (SimpleChart).
 
+License
+=======
+I extend original s7graphview's New BSD License.
 
 Web:      http://www.bitz.co.jp/
 Twitter:  @m_yukio

@@ -13,4 +13,10 @@
 
 @property (nonatomic, strong) IBOutlet SimpleChartView  *simpleChartView;
 
+- (IBAction)drawAxisX:(id)sender;
+- (IBAction)drawAxisY:(id)sender;
+- (IBAction)drawGridX:(id)sender;
+- (IBAction)drawGridY:(id)sender;
+- (IBAction)drawInfo:(id)sender;
+
 @end

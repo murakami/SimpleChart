@@ -18,10 +18,6 @@
 - (NSNumber *)simpleChartView:(SimpleChartView *)simpleChartView YValueAtPlot:(NSUInteger)plotIndex value:(NSUInteger)valueIndex;
 @optional
 - (BOOL)simpleChartView:(SimpleChartView *)simpleChartView shouldFillPlot:(NSUInteger)plotIndex;
-//@required
-//- (NSUInteger)simpleChartViewNumberOfPlots:(SimpleChartView *)simpleChartView;
-//- (NSArray *)simpleChartViewXValues:(SimpleChartView *)simpleChartView;
-//- (NSArray *)simpleChartView:(SimpleChartView *)simpleChartView yValuesForPlot:(NSUInteger)plotIndex;
 @end
 
 @protocol SimpleChartViewDelegate

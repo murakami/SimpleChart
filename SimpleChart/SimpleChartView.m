@@ -9,21 +9,17 @@
 #import "SimpleChartView.h"
 
 @interface SimpleChartView ()
-//@property (nonatomic, strong) NSMutableArray    *xValues;
-//@property (nonatomic, strong) NSMutableArray    *yValues;
-//@property (nonatomic, strong) NSDateFormatter   *xValuesFormatter;
-//@property (nonatomic, strong) NSNumberFormatter *yValuesFormatter;
 - (void)_init;
 - (UIColor *)uiColorByIndex:(NSInteger)index;
 - (void)drawBackground:(CGContextRef)context rect:(CGRect)rect;
+- (CGFloat)offsetXWithDrawAxisX:(BOOL)drawAxisX drawAxisY:(BOOL)drawAxisY drawInfo:(BOOL)drawInfo;
+- (CGFloat)offsetYWithDrawAxisX:(BOOL)drawAxisX drawAxisY:(BOOL)drawAxisY drawInfo:(BOOL)drawInfo;
+- (CGFloat)minYWithNumberOfPlots:(NSUInteger)numberOfPlots;
+- (CGFloat)maxYWithNumberOfPlots:(NSUInteger)numberOfPlots;
 @end
 
 @implementation SimpleChartView
 
-//@synthesize xValues = _xValues;
-//@synthesize yValues = _yValues;
-//@synthesize xValuesFormatter = _xValuesFormatter;
-//@synthesize yValuesFormatter = _yValuesFormatter;
 @synthesize dataSource = _dataSource;
 @synthesize xValuesFormatter = _xValuesFormatter;
 @synthesize yValuesFormatter = _yValuesFormatter;
@@ -83,8 +79,6 @@
 - (void)dealloc
 {
     DBGMSG(@"%s", __func__);
-    //self.xValues = nil;
-    //self.yValues = nil;
 
     self.dataSource = nil;
     self.xValuesFormatter = nil;
@@ -118,39 +112,14 @@
 		return;
 	}
 	
-	CGFloat offsetX = _drawAxisY ? 60.0f : 10.0f;
-	CGFloat offsetY = (_drawAxisX || _drawInfo) ? 30.0f : 10.0f;
+    CGFloat offsetX = [self offsetXWithDrawAxisX:self.drawAxisX drawAxisY:self.drawAxisY drawInfo:self.drawInfo];
+    CGFloat offsetY = [self offsetYWithDrawAxisX:self.drawAxisX drawAxisY:self.drawAxisY drawInfo:self.drawInfo];
 	
-	CGFloat minY = 0.0;
-	CGFloat maxY = 0.0;
+	CGFloat minY = [self minYWithNumberOfPlots:numberOfPlots];
+	CGFloat maxY = [self maxYWithNumberOfPlots:numberOfPlots];
 	
 	UIFont *font = [UIFont systemFontOfSize:11.0f];
-	
-	for (NSUInteger plotIndex = 0; plotIndex < numberOfPlots; plotIndex++) {
-		NSUInteger  valuesCount = [self.dataSource simpleChartView:self numberOfYValuesInPlot:plotIndex];
-		for (NSUInteger valueIndex = 0; valueIndex < valuesCount; valueIndex++) {
-            if ([[self.dataSource simpleChartView:self YValueAtPlot:plotIndex value:valueIndex] floatValue] > maxY) {
-				maxY = [[self.dataSource simpleChartView:self YValueAtPlot:plotIndex value:valueIndex] floatValue];
-			}
-		}
-	}
-	
-	if (maxY < 100) {
-		maxY = ceil(maxY / 10) * 10;
-	} 
-	
-	if (maxY > 100 && maxY < 1000) {
-		maxY = ceil(maxY / 100) * 100;
-	} 
-	
-	if (maxY > 1000 && maxY < 10000) {
-		maxY = ceil(maxY / 1000) * 1000;
-	}
-	
-	if (maxY > 10000 && maxY < 100000) {
-		maxY = ceil(maxY / 10000) * 10000;
-	}
-	
+		
 	CGFloat step = (maxY - minY) / 5;
 	CGFloat stepY = (self.frame.size.height - (offsetY * 2)) / maxY;
 	
@@ -281,8 +250,6 @@
 	CGContextSetLineDash(context, 0, NULL, 0);
 	
 	for (NSUInteger plotIndex = 0; plotIndex < numberOfPlots; plotIndex++) {
-		
-		//NSArray *values = [self.dataSource simpleChartView:self yValuesForPlot:plotIndex];
 		BOOL shouldFill = NO;
 		
 		if ([self.dataSource respondsToSelector:@selector(simpleChartView:shouldFillPlot:)]) {
@@ -363,6 +330,52 @@
 {
     CGContextSetFillColorWithColor(context, self.backgroundColor.CGColor);
 	CGContextFillRect(context, rect);
+}
+
+- (CGFloat)offsetXWithDrawAxisX:(BOOL)drawAxisX drawAxisY:(BOOL)drawAxisY drawInfo:(BOOL)drawInfo
+{
+    return _drawAxisY ? 60.0f : 10.0f;
+}
+
+- (CGFloat)offsetYWithDrawAxisX:(BOOL)drawAxisX drawAxisY:(BOOL)drawAxisY drawInfo:(BOOL)drawInfo
+{
+	return (_drawAxisX || _drawInfo) ? 30.0f : 10.0f;
+}
+
+- (CGFloat)minYWithNumberOfPlots:(NSUInteger)numberOfPlots
+{
+    return 0.0;
+}
+
+- (CGFloat)maxYWithNumberOfPlots:(NSUInteger)numberOfPlots
+{
+    CGFloat maxY = 0.0;
+
+    for (NSUInteger plotIndex = 0; plotIndex < numberOfPlots; plotIndex++) {
+		NSUInteger  valuesCount = [self.dataSource simpleChartView:self numberOfYValuesInPlot:plotIndex];
+		for (NSUInteger valueIndex = 0; valueIndex < valuesCount; valueIndex++) {
+            if ([[self.dataSource simpleChartView:self YValueAtPlot:plotIndex value:valueIndex] floatValue] > maxY) {
+				maxY = [[self.dataSource simpleChartView:self YValueAtPlot:plotIndex value:valueIndex] floatValue];
+			}
+		}
+	}
+	
+	if (maxY < 100) {
+		maxY = ceil(maxY / 10) * 10;
+	} 
+	
+	if (maxY > 100 && maxY < 1000) {
+		maxY = ceil(maxY / 100) * 100;
+	} 
+	
+	if (maxY > 1000 && maxY < 10000) {
+		maxY = ceil(maxY / 1000) * 1000;
+	}
+	
+	if (maxY > 10000 && maxY < 100000) {
+		maxY = ceil(maxY / 10000) * 10000;
+	}
+    return maxY;
 }
 
 - (void)reloadData
