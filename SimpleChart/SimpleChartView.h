@@ -10,7 +10,7 @@
 
 @class SimpleChartView;
 
-@protocol SimpleChartViewDataSource <NSObject>
+@protocol SimpleChartViewDataSource
 - (NSUInteger)numberOfPlotsInSimpleChartView:(SimpleChartView *)simpleChartView;
 - (NSUInteger)numberOfXValuesInSimpleChartView:(SimpleChartView *)simpleChartView;
 - (NSUInteger)simpleChartView:(SimpleChartView *)simpleChartView numberOfYValuesInPlot:(NSUInteger)plotIndex;
@@ -26,7 +26,7 @@
 
 @interface SimpleChartView : UIView
 
-@property (nonatomic, weak) IBOutlet id<SimpleChartViewDataSource> dataSource;
+@property (nonatomic, weak) IBOutlet id<SimpleChartViewDataSource, NSObject> dataSource;
 @property (nonatomic, strong) IBOutlet NSFormatter *xValuesFormatter;
 @property (nonatomic, strong) IBOutlet NSFormatter *yValuesFormatter;
 @property (nonatomic, assign) BOOL drawAxisX;
