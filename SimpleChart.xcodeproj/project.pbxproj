@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56C37FDE1840C19000A8646D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C37FDD1840C19000A8646D /* Foundation.framework */; };
+		56C37FE31840C19000A8646D /* SimpleChart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56C37FE21840C19000A8646D /* SimpleChart.h */; };
+		56C37FE51840C19000A8646D /* SimpleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C37FE41840C19000A8646D /* SimpleChart.m */; };
+		56C37FEC1840C19000A8646D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C37FEB1840C19000A8646D /* XCTest.framework */; };
+		56C37FED1840C19000A8646D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C37FDD1840C19000A8646D /* Foundation.framework */; };
+		56C37FEF1840C19000A8646D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C37FEE1840C19000A8646D /* UIKit.framework */; };
+		56C37FF21840C19000A8646D /* libSimpleChart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C37FDA1840C19000A8646D /* libSimpleChart.a */; };
+		56C37FF81840C19000A8646D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56C37FF61840C19000A8646D /* InfoPlist.strings */; };
+		56C37FFA1840C19000A8646D /* SimpleChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C37FF91840C19000A8646D /* SimpleChartTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56C37FF01840C19000A8646D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56C37FD21840C19000A8646D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56C37FD91840C19000A8646D;
+			remoteInfo = SimpleChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		56C37FD81840C19000A8646D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				56C37FE31840C19000A8646D /* SimpleChart.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		56C37FDA1840C19000A8646D /* libSimpleChart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSimpleChart.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C37FDD1840C19000A8646D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		56C37FE11840C19000A8646D /* SimpleChart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleChart-Prefix.pch"; sourceTree = "<group>"; };
+		56C37FE21840C19000A8646D /* SimpleChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleChart.h; sourceTree = "<group>"; };
+		56C37FE41840C19000A8646D /* SimpleChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleChart.m; sourceTree = "<group>"; };
+		56C37FEA1840C19000A8646D /* SimpleChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C37FEB1840C19000A8646D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		56C37FEE1840C19000A8646D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		56C37FF51840C19000A8646D /* SimpleChartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleChartTests-Info.plist"; sourceTree = "<group>"; };
+		56C37FF71840C19000A8646D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		56C37FF91840C19000A8646D /* SimpleChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleChartTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56C37FD71840C19000A8646D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C37FDE1840C19000A8646D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C37FE71840C19000A8646D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C37FEC1840C19000A8646D /* XCTest.framework in Frameworks */,
+				56C37FEF1840C19000A8646D /* UIKit.framework in Frameworks */,
+				56C37FF21840C19000A8646D /* libSimpleChart.a in Frameworks */,
+				56C37FED1840C19000A8646D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56C37FD11840C19000A8646D = {
+			isa = PBXGroup;
+			children = (
+				56C37FDF1840C19000A8646D /* SimpleChart */,
+				56C37FF31840C19000A8646D /* SimpleChartTests */,
+				56C37FDC1840C19000A8646D /* Frameworks */,
+				56C37FDB1840C19000A8646D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56C37FDB1840C19000A8646D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56C37FDA1840C19000A8646D /* libSimpleChart.a */,
+				56C37FEA1840C19000A8646D /* SimpleChartTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56C37FDC1840C19000A8646D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56C37FDD1840C19000A8646D /* Foundation.framework */,
+				56C37FEB1840C19000A8646D /* XCTest.framework */,
+				56C37FEE1840C19000A8646D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56C37FDF1840C19000A8646D /* SimpleChart */ = {
+			isa = PBXGroup;
+			children = (
+				56C37FE21840C19000A8646D /* SimpleChart.h */,
+				56C37FE41840C19000A8646D /* SimpleChart.m */,
+				56C37FE01840C19000A8646D /* Supporting Files */,
+			);
+			path = SimpleChart;
+			sourceTree = "<group>";
+		};
+		56C37FE01840C19000A8646D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56C37FE11840C19000A8646D /* SimpleChart-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56C37FF31840C19000A8646D /* SimpleChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				56C37FF91840C19000A8646D /* SimpleChartTests.m */,
+				56C37FF41840C19000A8646D /* Supporting Files */,
+			);
+			path = SimpleChartTests;
+			sourceTree = "<group>";
+		};
+		56C37FF41840C19000A8646D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56C37FF51840C19000A8646D /* SimpleChartTests-Info.plist */,
+				56C37FF61840C19000A8646D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56C37FD91840C19000A8646D /* SimpleChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56C37FFD1840C19000A8646D /* Build configuration list for PBXNativeTarget "SimpleChart" */;
+			buildPhases = (
+				56C37FD61840C19000A8646D /* Sources */,
+				56C37FD71840C19000A8646D /* Frameworks */,
+				56C37FD81840C19000A8646D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleChart;
+			productName = SimpleChart;
+			productReference = 56C37FDA1840C19000A8646D /* libSimpleChart.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		56C37FE91840C19000A8646D /* SimpleChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56C380001840C19000A8646D /* Build configuration list for PBXNativeTarget "SimpleChartTests" */;
+			buildPhases = (
+				56C37FE61840C19000A8646D /* Sources */,
+				56C37FE71840C19000A8646D /* Frameworks */,
+				56C37FE81840C19000A8646D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56C37FF11840C19000A8646D /* PBXTargetDependency */,
+			);
+			name = SimpleChartTests;
+			productName = SimpleChartTests;
+			productReference = 56C37FEA1840C19000A8646D /* SimpleChartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56C37FD21840C19000A8646D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "村上幸雄";
+			};
+			buildConfigurationList = 56C37FD51840C19000A8646D /* Build configuration list for PBXProject "SimpleChart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 56C37FD11840C19000A8646D;
+			productRefGroup = 56C37FDB1840C19000A8646D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56C37FD91840C19000A8646D /* SimpleChart */,
+				56C37FE91840C19000A8646D /* SimpleChartTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56C37FE81840C19000A8646D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C37FF81840C19000A8646D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56C37FD61840C19000A8646D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C37FE51840C19000A8646D /* SimpleChart.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C37FE61840C19000A8646D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C37FFA1840C19000A8646D /* SimpleChartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56C37FF11840C19000A8646D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56C37FD91840C19000A8646D /* SimpleChart */;
+			targetProxy = 56C37FF01840C19000A8646D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56C37FF61840C19000A8646D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56C37FF71840C19000A8646D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56C37FFB1840C19000A8646D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		56C37FFC1840C19000A8646D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56C37FFE1840C19000A8646D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SimpleChart.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleChart/SimpleChart-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		56C37FFF1840C19000A8646D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SimpleChart.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleChart/SimpleChart-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		56C380011840C19000A8646D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleChart/SimpleChart-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SimpleChartTests/SimpleChartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		56C380021840C19000A8646D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleChart/SimpleChart-Prefix.pch";
+				INFOPLIST_FILE = "SimpleChartTests/SimpleChartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56C37FD51840C19000A8646D /* Build configuration list for PBXProject "SimpleChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C37FFB1840C19000A8646D /* Debug */,
+				56C37FFC1840C19000A8646D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56C37FFD1840C19000A8646D /* Build configuration list for PBXNativeTarget "SimpleChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C37FFE1840C19000A8646D /* Debug */,
+				56C37FFF1840C19000A8646D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		56C380001840C19000A8646D /* Build configuration list for PBXNativeTarget "SimpleChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C380011840C19000A8646D /* Debug */,
+				56C380021840C19000A8646D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56C37FD21840C19000A8646D /* Project object */;
+}
