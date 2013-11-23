@@ -20,7 +20,7 @@
 		563E4FC815837BEC003FD099 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4FA815837BEC003FD099 /* UIKit.framework */; };
 		563E4FC915837BEC003FD099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4FAA15837BEC003FD099 /* Foundation.framework */; };
 		563E4FD115837BEC003FD099 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 563E4FCF15837BEC003FD099 /* InfoPlist.strings */; };
-		563E4FD415837BEC003FD099 /* SimpleChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E4FD315837BEC003FD099 /* SimpleChartTests.m */; };
+		563E4FD415837BEC003FD099 /* SampleCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E4FD315837BEC003FD099 /* SampleCodeTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,32 +29,32 @@
 			containerPortal = 563E4F9B15837BEB003FD099 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 563E4FA315837BEC003FD099;
-			remoteInfo = SimpleChart;
+			remoteInfo = SampleCode;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		560704B51584D841002425E8 /* SimpleChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleChartView.h; sourceTree = "<group>"; };
 		560704B61584D841002425E8 /* SimpleChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleChartView.m; sourceTree = "<group>"; };
-		563E4FA415837BEC003FD099 /* SimpleChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		563E4FA415837BEC003FD099 /* SampleCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		563E4FA815837BEC003FD099 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		563E4FAA15837BEC003FD099 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		563E4FAC15837BEC003FD099 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		563E4FB015837BEC003FD099 /* SimpleChart-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleChart-Info.plist"; sourceTree = "<group>"; };
+		563E4FB015837BEC003FD099 /* SampleCode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleCode-Info.plist"; sourceTree = "<group>"; };
 		563E4FB215837BEC003FD099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		563E4FB415837BEC003FD099 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		563E4FB615837BEC003FD099 /* SimpleChart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleChart-Prefix.pch"; sourceTree = "<group>"; };
-		563E4FB715837BEC003FD099 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		563E4FB815837BEC003FD099 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		563E4FB615837BEC003FD099 /* SampleCode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleCode-Prefix.pch"; sourceTree = "<group>"; };
+		563E4FB715837BEC003FD099 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../SampleCode/AppDelegate.h; sourceTree = "<group>"; };
+		563E4FB815837BEC003FD099 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../SampleCode/AppDelegate.m; sourceTree = "<group>"; };
 		563E4FBB15837BEC003FD099 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		563E4FBD15837BEC003FD099 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		563E4FBE15837BEC003FD099 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		563E4FC515837BEC003FD099 /* SimpleChartTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleChartTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		563E4FC515837BEC003FD099 /* SampleCodeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleCodeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		563E4FC615837BEC003FD099 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		563E4FCE15837BEC003FD099 /* SimpleChartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleChartTests-Info.plist"; sourceTree = "<group>"; };
+		563E4FCE15837BEC003FD099 /* SampleCodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleCodeTests-Info.plist"; sourceTree = "<group>"; };
 		563E4FD015837BEC003FD099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		563E4FD215837BEC003FD099 /* SimpleChartTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleChartTests.h; sourceTree = "<group>"; };
-		563E4FD315837BEC003FD099 /* SimpleChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleChartTests.m; sourceTree = "<group>"; };
+		563E4FD215837BEC003FD099 /* SampleCodeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleCodeTests.h; sourceTree = "<group>"; };
+		563E4FD315837BEC003FD099 /* SampleCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleCodeTests.m; sourceTree = "<group>"; };
 		56B9659E15B170660062453C /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,8 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				56B9659E15B170660062453C /* README */,
-				563E4FAE15837BEC003FD099 /* SimpleChart */,
-				563E4FCC15837BEC003FD099 /* SimpleChartTests */,
+				563E4FAE15837BEC003FD099 /* SampleCode */,
+				563E4FCC15837BEC003FD099 /* SampleCodeTests */,
 				563E4FA715837BEC003FD099 /* Frameworks */,
 				563E4FA515837BEC003FD099 /* Products */,
 			);
@@ -96,8 +96,8 @@
 		563E4FA515837BEC003FD099 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				563E4FA415837BEC003FD099 /* SimpleChart.app */,
-				563E4FC515837BEC003FD099 /* SimpleChartTests.octest */,
+				563E4FA415837BEC003FD099 /* SampleCode.app */,
+				563E4FC515837BEC003FD099 /* SampleCodeTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		563E4FAE15837BEC003FD099 /* SimpleChart */ = {
+		563E4FAE15837BEC003FD099 /* SampleCode */ = {
 			isa = PBXGroup;
 			children = (
 				563E4FB715837BEC003FD099 /* AppDelegate.h */,
@@ -125,34 +125,34 @@
 				560704B61584D841002425E8 /* SimpleChartView.m */,
 				563E4FAF15837BEC003FD099 /* Supporting Files */,
 			);
-			path = SimpleChart;
+			path = SampleCode;
 			sourceTree = "<group>";
 		};
 		563E4FAF15837BEC003FD099 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				563E4FB015837BEC003FD099 /* SimpleChart-Info.plist */,
+				563E4FB015837BEC003FD099 /* SampleCode-Info.plist */,
 				563E4FB115837BEC003FD099 /* InfoPlist.strings */,
 				563E4FB415837BEC003FD099 /* main.m */,
-				563E4FB615837BEC003FD099 /* SimpleChart-Prefix.pch */,
+				563E4FB615837BEC003FD099 /* SampleCode-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		563E4FCC15837BEC003FD099 /* SimpleChartTests */ = {
+		563E4FCC15837BEC003FD099 /* SampleCodeTests */ = {
 			isa = PBXGroup;
 			children = (
-				563E4FD215837BEC003FD099 /* SimpleChartTests.h */,
-				563E4FD315837BEC003FD099 /* SimpleChartTests.m */,
+				563E4FD215837BEC003FD099 /* SampleCodeTests.h */,
+				563E4FD315837BEC003FD099 /* SampleCodeTests.m */,
 				563E4FCD15837BEC003FD099 /* Supporting Files */,
 			);
-			path = SimpleChartTests;
+			path = SampleCodeTests;
 			sourceTree = "<group>";
 		};
 		563E4FCD15837BEC003FD099 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				563E4FCE15837BEC003FD099 /* SimpleChartTests-Info.plist */,
+				563E4FCE15837BEC003FD099 /* SampleCodeTests-Info.plist */,
 				563E4FCF15837BEC003FD099 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -161,9 +161,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		563E4FA315837BEC003FD099 /* SimpleChart */ = {
+		563E4FA315837BEC003FD099 /* SampleCode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 563E4FD715837BEC003FD099 /* Build configuration list for PBXNativeTarget "SimpleChart" */;
+			buildConfigurationList = 563E4FD715837BEC003FD099 /* Build configuration list for PBXNativeTarget "SampleCode" */;
 			buildPhases = (
 				563E4FA015837BEC003FD099 /* Sources */,
 				563E4FA115837BEC003FD099 /* Frameworks */,
@@ -173,14 +173,14 @@
 			);
 			dependencies = (
 			);
-			name = SimpleChart;
-			productName = SimpleChart;
-			productReference = 563E4FA415837BEC003FD099 /* SimpleChart.app */;
+			name = SampleCode;
+			productName = SampleCode;
+			productReference = 563E4FA415837BEC003FD099 /* SampleCode.app */;
 			productType = "com.apple.product-type.application";
 		};
-		563E4FC415837BEC003FD099 /* SimpleChartTests */ = {
+		563E4FC415837BEC003FD099 /* SampleCodeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 563E4FDA15837BEC003FD099 /* Build configuration list for PBXNativeTarget "SimpleChartTests" */;
+			buildConfigurationList = 563E4FDA15837BEC003FD099 /* Build configuration list for PBXNativeTarget "SampleCodeTests" */;
 			buildPhases = (
 				563E4FC015837BEC003FD099 /* Sources */,
 				563E4FC115837BEC003FD099 /* Frameworks */,
@@ -192,9 +192,9 @@
 			dependencies = (
 				563E4FCB15837BEC003FD099 /* PBXTargetDependency */,
 			);
-			name = SimpleChartTests;
-			productName = SimpleChartTests;
-			productReference = 563E4FC515837BEC003FD099 /* SimpleChartTests.octest */;
+			name = SampleCodeTests;
+			productName = SampleCodeTests;
+			productReference = 563E4FC515837BEC003FD099 /* SampleCodeTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +206,7 @@
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "ビッツ有限会社";
 			};
-			buildConfigurationList = 563E4F9E15837BEB003FD099 /* Build configuration list for PBXProject "SimpleChart" */;
+			buildConfigurationList = 563E4F9E15837BEB003FD099 /* Build configuration list for PBXProject "SampleCode" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -218,8 +218,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				563E4FA315837BEC003FD099 /* SimpleChart */,
-				563E4FC415837BEC003FD099 /* SimpleChartTests */,
+				563E4FA315837BEC003FD099 /* SampleCode */,
+				563E4FC415837BEC003FD099 /* SampleCodeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				563E4FD415837BEC003FD099 /* SimpleChartTests.m in Sources */,
+				563E4FD415837BEC003FD099 /* SampleCodeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +285,7 @@
 /* Begin PBXTargetDependency section */
 		563E4FCB15837BEC003FD099 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 563E4FA315837BEC003FD099 /* SimpleChart */;
+			target = 563E4FA315837BEC003FD099 /* SampleCode */;
 			targetProxy = 563E4FCA15837BEC003FD099 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -367,9 +367,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SimpleChart/SimpleChart-Prefix.pch";
-				INFOPLIST_FILE = "SimpleChart/SimpleChart-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SampleCode/SampleCode-Prefix.pch";
+				INFOPLIST_FILE = "SampleCode/SampleCode-Info.plist";
+				PRODUCT_NAME = SampleCode;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -378,9 +378,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SimpleChart/SimpleChart-Prefix.pch";
-				INFOPLIST_FILE = "SimpleChart/SimpleChart-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SampleCode/SampleCode-Prefix.pch";
+				INFOPLIST_FILE = "SampleCode/SampleCode-Info.plist";
+				PRODUCT_NAME = SampleCode;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -388,15 +388,15 @@
 		563E4FDB15837BEC003FD099 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleChart.app/SimpleChart";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SampleCode.app/SampleCode";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SimpleChart/SimpleChart-Prefix.pch";
-				INFOPLIST_FILE = "SimpleChartTests/SimpleChartTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SampleCode/SampleCode-Prefix.pch";
+				INFOPLIST_FILE = "SampleCodeTests/SampleCodeTests-Info.plist";
+				PRODUCT_NAME = SampleCodeTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -405,15 +405,15 @@
 		563E4FDC15837BEC003FD099 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleChart.app/SimpleChart";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SampleCode.app/SampleCode";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SimpleChart/SimpleChart-Prefix.pch";
-				INFOPLIST_FILE = "SimpleChartTests/SimpleChartTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SampleCode/SampleCode-Prefix.pch";
+				INFOPLIST_FILE = "SampleCodeTests/SampleCodeTests-Info.plist";
+				PRODUCT_NAME = SampleCodeTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -422,7 +422,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		563E4F9E15837BEB003FD099 /* Build configuration list for PBXProject "SimpleChart" */ = {
+		563E4F9E15837BEB003FD099 /* Build configuration list for PBXProject "SampleCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				563E4FD515837BEC003FD099 /* Debug */,
@@ -431,7 +431,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		563E4FD715837BEC003FD099 /* Build configuration list for PBXNativeTarget "SimpleChart" */ = {
+		563E4FD715837BEC003FD099 /* Build configuration list for PBXNativeTarget "SampleCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				563E4FD815837BEC003FD099 /* Debug */,
@@ -440,7 +440,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		563E4FDA15837BEC003FD099 /* Build configuration list for PBXNativeTarget "SimpleChartTests" */ = {
+		563E4FDA15837BEC003FD099 /* Build configuration list for PBXNativeTarget "SampleCodeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				563E4FDB15837BEC003FD099 /* Debug */,

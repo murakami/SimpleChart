@@ -1,14 +1,14 @@
 //
-//  SimpleChartTests.m
-//  SimpleChartTests
+//  SampleCodeTests.m
+//  SampleCodeTests
 //
 //  Created by 村上 幸雄 on 12/06/09.
 //  Copyright (c) 2012年 ビッツ有限会社. All rights reserved.
 //
 
-#import "SimpleChartTests.h"
+#import "SampleCodeTests.h"
 
-@implementation SimpleChartTests
+@implementation SampleCodeTests
 
 - (void)setUp
 {
@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in SimpleChartTests");
+    STFail(@"Unit tests are not implemented yet in SampleCodeTests");
 }
 
 @end
