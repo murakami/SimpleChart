@@ -24,6 +24,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		563AFD0B1840C2130002711E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 563AFD061840C2130002711E /* SimpleChart.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56C37FDA1840C19000A8646D;
+			remoteInfo = SimpleChart;
+		};
+		563AFD0D1840C2130002711E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 563AFD061840C2130002711E /* SimpleChart.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56C37FEA1840C19000A8646D;
+			remoteInfo = SimpleChartTests;
+		};
 		563E4FCA15837BEC003FD099 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 563E4F9B15837BEB003FD099 /* Project object */;
@@ -36,6 +50,7 @@
 /* Begin PBXFileReference section */
 		560704B51584D841002425E8 /* SimpleChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleChartView.h; sourceTree = "<group>"; };
 		560704B61584D841002425E8 /* SimpleChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleChartView.m; sourceTree = "<group>"; };
+		563AFD061840C2130002711E /* SimpleChart.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SimpleChart.xcodeproj; sourceTree = "<group>"; };
 		563E4FA415837BEC003FD099 /* SampleCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		563E4FA815837BEC003FD099 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		563E4FAA15837BEC003FD099 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -82,9 +97,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		563AFD071840C2130002711E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				563AFD0C1840C2130002711E /* libSimpleChart.a */,
+				563AFD0E1840C2130002711E /* SimpleChartTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		563E4F9915837BEB003FD099 = {
 			isa = PBXGroup;
 			children = (
+				563AFD061840C2130002711E /* SimpleChart.xcodeproj */,
 				56B9659E15B170660062453C /* README */,
 				563E4FAE15837BEC003FD099 /* SampleCode */,
 				563E4FCC15837BEC003FD099 /* SampleCodeTests */,
@@ -216,6 +241,12 @@
 			mainGroup = 563E4F9915837BEB003FD099;
 			productRefGroup = 563E4FA515837BEC003FD099 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 563AFD071840C2130002711E /* Products */;
+					ProjectRef = 563AFD061840C2130002711E /* SimpleChart.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				563E4FA315837BEC003FD099 /* SampleCode */,
@@ -223,6 +254,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		563AFD0C1840C2130002711E /* libSimpleChart.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSimpleChart.a;
+			remoteRef = 563AFD0B1840C2130002711E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		563AFD0E1840C2130002711E /* SimpleChartTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SimpleChartTests.xctest;
+			remoteRef = 563AFD0D1840C2130002711E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		563E4FA215837BEC003FD099 /* Resources */ = {
