@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SimpleChartView.h"
+#import <SimpleChart/SimpleChartView.h>
 
+/*!
+ * @class ViewController
+ * @abstract ViewControllerクラス
+ * @discussion ビュー・コントローラ
+ */
 @interface ViewController : UIViewController <SimpleChartViewDataSource>
 
-@property (nonatomic, strong) IBOutlet SimpleChartView  *simpleChartView;
+@property (nonatomic, weak) IBOutlet SimpleChartView  *simpleChartView;
 
 - (IBAction)drawAxisX:(id)sender;
 - (IBAction)drawAxisY:(id)sender;

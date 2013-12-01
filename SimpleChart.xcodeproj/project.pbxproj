@@ -6,16 +6,29 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		56DBC8E618422E59005A0F8D /* SimpleChart.framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 56DBC8E718422E59005A0F8D /* Build configuration list for PBXAggregateTarget "SimpleChart.framework" */;
+			buildPhases = (
+				56DBC8EC18422FBD005A0F8D /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = SimpleChart.framework;
+			productName = SimpleChart.framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		565F920A184B43DB00847DBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565F9209184B43DB00847DBA /* UIKit.framework */; };
 		56C37FDE1840C19000A8646D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C37FDD1840C19000A8646D /* Foundation.framework */; };
-		56C37FE31840C19000A8646D /* SimpleChart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56C37FE21840C19000A8646D /* SimpleChart.h */; };
-		56C37FE51840C19000A8646D /* SimpleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C37FE41840C19000A8646D /* SimpleChart.m */; };
 		56C37FEC1840C19000A8646D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C37FEB1840C19000A8646D /* XCTest.framework */; };
 		56C37FED1840C19000A8646D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C37FDD1840C19000A8646D /* Foundation.framework */; };
-		56C37FEF1840C19000A8646D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C37FEE1840C19000A8646D /* UIKit.framework */; };
 		56C37FF21840C19000A8646D /* libSimpleChart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C37FDA1840C19000A8646D /* libSimpleChart.a */; };
 		56C37FF81840C19000A8646D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56C37FF61840C19000A8646D /* InfoPlist.strings */; };
 		56C37FFA1840C19000A8646D /* SimpleChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C37FF91840C19000A8646D /* SimpleChartTests.m */; };
+		56DBC8E01841D2B0005A0F8D /* SimpleChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DBC8DF1841D2B0005A0F8D /* SimpleChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,24 +48,25 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				56C37FE31840C19000A8646D /* SimpleChart.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		565F9209184B43DB00847DBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		56C37FDA1840C19000A8646D /* libSimpleChart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSimpleChart.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C37FDD1840C19000A8646D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		56C37FE11840C19000A8646D /* SimpleChart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleChart-Prefix.pch"; sourceTree = "<group>"; };
-		56C37FE21840C19000A8646D /* SimpleChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleChart.h; sourceTree = "<group>"; };
-		56C37FE41840C19000A8646D /* SimpleChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleChart.m; sourceTree = "<group>"; };
 		56C37FEA1840C19000A8646D /* SimpleChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C37FEB1840C19000A8646D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		56C37FEE1840C19000A8646D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		56C37FF51840C19000A8646D /* SimpleChartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleChartTests-Info.plist"; sourceTree = "<group>"; };
 		56C37FF71840C19000A8646D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		56C37FF91840C19000A8646D /* SimpleChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleChartTests.m; sourceTree = "<group>"; };
+		56DBC8DE1841D2B0005A0F8D /* SimpleChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleChartView.h; sourceTree = "<group>"; };
+		56DBC8DF1841D2B0005A0F8D /* SimpleChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleChartView.m; sourceTree = "<group>"; };
+		56DBC8E41842023B005A0F8D /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		56DBC8E518420AB0005A0F8D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565F920A184B43DB00847DBA /* UIKit.framework in Frameworks */,
 				56C37FDE1840C19000A8646D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,7 +84,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				56C37FEC1840C19000A8646D /* XCTest.framework in Frameworks */,
-				56C37FEF1840C19000A8646D /* UIKit.framework in Frameworks */,
 				56C37FF21840C19000A8646D /* libSimpleChart.a in Frameworks */,
 				56C37FED1840C19000A8646D /* Foundation.framework in Frameworks */,
 			);
@@ -81,6 +95,7 @@
 		56C37FD11840C19000A8646D = {
 			isa = PBXGroup;
 			children = (
+				56DBC8E41842023B005A0F8D /* README */,
 				56C37FDF1840C19000A8646D /* SimpleChart */,
 				56C37FF31840C19000A8646D /* SimpleChartTests */,
 				56C37FDC1840C19000A8646D /* Frameworks */,
@@ -100,9 +115,9 @@
 		56C37FDC1840C19000A8646D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				565F9209184B43DB00847DBA /* UIKit.framework */,
 				56C37FDD1840C19000A8646D /* Foundation.framework */,
 				56C37FEB1840C19000A8646D /* XCTest.framework */,
-				56C37FEE1840C19000A8646D /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,8 +125,9 @@
 		56C37FDF1840C19000A8646D /* SimpleChart */ = {
 			isa = PBXGroup;
 			children = (
-				56C37FE21840C19000A8646D /* SimpleChart.h */,
-				56C37FE41840C19000A8646D /* SimpleChart.m */,
+				56DBC8E11841DA2C005A0F8D /* Headers */,
+				56DBC8E21841DA47005A0F8D /* Classes */,
+				56DBC8E31841DA59005A0F8D /* Resources */,
 				56C37FE01840C19000A8646D /* Supporting Files */,
 			);
 			path = SimpleChart;
@@ -141,6 +157,30 @@
 				56C37FF61840C19000A8646D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56DBC8E11841DA2C005A0F8D /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				56DBC8DE1841D2B0005A0F8D /* SimpleChartView.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		56DBC8E21841DA47005A0F8D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				56DBC8DF1841D2B0005A0F8D /* SimpleChartView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		56DBC8E31841DA59005A0F8D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56DBC8E518420AB0005A0F8D /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +229,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "村上幸雄";
+				TargetAttributes = {
+					56C37FE91840C19000A8646D = {
+						TestTargetID = 56DBC8E618422E59005A0F8D;
+					};
+				};
 			};
 			buildConfigurationList = 56C37FD51840C19000A8646D /* Build configuration list for PBXProject "SimpleChart" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -204,6 +249,7 @@
 			targets = (
 				56C37FD91840C19000A8646D /* SimpleChart */,
 				56C37FE91840C19000A8646D /* SimpleChartTests */,
+				56DBC8E618422E59005A0F8D /* SimpleChart.framework */,
 			);
 		};
 /* End PBXProject section */
@@ -219,12 +265,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56DBC8EC18422FBD005A0F8D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# ==============================\n# 変数設定\n# ==============================\n#FRAMEWORK_NAME=$(/usr/libexec/PlistBuddy -c \"Print CFBundleName\" ${INFOPLIST})\nFRAMEWORK_NAME='SimpleChart'\nINFOPLIST=\"${FRAMEWORK_NAME}/Resources/Info.plist\"\nBUILD_TARGET_NAME=${FRAMEWORK_NAME}\n#FRAMEWORK_BUILD_CONFIGURATION= ${CONFIGURATION}\nFRAMEWORK_BUILD_CONFIGURATION=\"Release\"\nFRAMEWORK_VERSION_NUMBER=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" ${INFOPLIST})\nFRAMEWORK_VERSION=A\nFRAMEWORK_BUILD_PATH=\"Framework\"\nFRAMEWORK_DIR=\"${FRAMEWORK_BUILD_PATH}/${FRAMEWORK_NAME}.framework\"\nPACKAGENAME=\"${FRAMEWORK_NAME}.${FRAMEWORK_VERSION_NUMBER}.zip\"\n\n# ==============================\n# ビルド\n# ==============================\necho xcodebuild -configuration ${FRAMEWORK_BUILD_CONFIGURATION} -project ${PROJECT_NAME}.xcodeproj -target ${BUILD_TARGET_NAME} clean\nxcodebuild -configuration ${FRAMEWORK_BUILD_CONFIGURATION} -project ${PROJECT_NAME}.xcodeproj -target ${BUILD_TARGET_NAME} clean\necho xcodebuild -configuration ${FRAMEWORK_BUILD_CONFIGURATION} -project ${PROJECT_NAME}.xcodeproj -target ${BUILD_TARGET_NAME} -sdk iphonesimulator${IPHONEOS_DEPLOYMENT_TARGET}\nxcodebuild -configuration ${FRAMEWORK_BUILD_CONFIGURATION} -project ${PROJECT_NAME}.xcodeproj -target ${BUILD_TARGET_NAME} -sdk iphonesimulator${IPHONEOS_DEPLOYMENT_TARGET}\n[ $? != 0 ] && exit 1\necho xcodebuild -configuration ${FRAMEWORK_BUILD_CONFIGURATION} -project ${PROJECT_NAME}.xcodeproj -target ${BUILD_TARGET_NAME} -sdk iphoneos${IPHONEOS_DEPLOYMENT_TARGET}\nxcodebuild -configuration ${FRAMEWORK_BUILD_CONFIGURATION} -project ${PROJECT_NAME}.xcodeproj -target ${BUILD_TARGET_NAME} -sdk iphoneos${IPHONEOS_DEPLOYMENT_TARGET}\n[ $? != 0 ] && exit 1\n\n# ==============================\n# ディレクトリ作成\n# ==============================\n[ -d \"${FRAMEWORK_BUILD_PATH}\" ] && rm -rf \"${FRAMEWORK_BUILD_PATH}\"\nmkdir -p ${FRAMEWORK_DIR}\nmkdir -p ${FRAMEWORK_DIR}/Versions\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}/Resources\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}/Headers\nln -s ${FRAMEWORK_VERSION} ${FRAMEWORK_DIR}/Versions/Current\nln -s Versions/Current/Headers ${FRAMEWORK_DIR}/Headers\nln -s Versions/Current/Resources ${FRAMEWORK_DIR}/Resources\nln -s Versions/Current/${FRAMEWORK_NAME} ${FRAMEWORK_DIR}/${FRAMEWORK_NAME}\n\n# ==============================\n# framework作成\n# ==============================\nlipo -create \\\nbuild/${FRAMEWORK_BUILD_CONFIGURATION}-iphoneos/lib${FRAMEWORK_NAME}.a \\\nbuild/${FRAMEWORK_BUILD_CONFIGURATION}-iphonesimulator/lib${FRAMEWORK_NAME}.a \\\n-o \"${FRAMEWORK_DIR}/Versions/Current/${FRAMEWORK_NAME}\"\n\ncp -Rf ${BUILD_TARGET_NAME}/Headers/* ${FRAMEWORK_DIR}/Headers/\n                                    cp ${BUILD_TARGET_NAME}/Resources/* ${FRAMEWORK_DIR}/Resources/\n                                    cp ${INFOPLIST} ${FRAMEWORK_DIR}/Resources/\n                                    cd ${FRAMEWORK_BUILD_PATH}\n                                    chmod -fR 777 \"${FRAMEWORK_NAME}.framework\"\n                                    zip -ry ${PACKAGENAME} $(basename $FRAMEWORK_DIR)\n                                    \n                                    # End Of File";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		56C37FD61840C19000A8646D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56C37FE51840C19000A8646D /* SimpleChart.m in Sources */,
+				56DBC8E01841D2B0005A0F8D /* SimpleChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +352,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -322,7 +383,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -356,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -369,6 +430,7 @@
 				);
 				INFOPLIST_FILE = "SimpleChartTests/SimpleChartTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -377,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -386,7 +449,22 @@
 				GCC_PREFIX_HEADER = "SimpleChart/SimpleChart-Prefix.pch";
 				INFOPLIST_FILE = "SimpleChartTests/SimpleChartTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		56DBC8E818422E59005A0F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		56DBC8E918422E59005A0F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -409,6 +487,7 @@
 				56C37FFF1840C19000A8646D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56C380001840C19000A8646D /* Build configuration list for PBXNativeTarget "SimpleChartTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +496,16 @@
 				56C380021840C19000A8646D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56DBC8E718422E59005A0F8D /* Build configuration list for PBXAggregateTarget "SimpleChart.framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56DBC8E818422E59005A0F8D /* Debug */,
+				56DBC8E918422E59005A0F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

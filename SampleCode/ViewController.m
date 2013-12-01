@@ -9,10 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (nonatomic, retain) NSMutableArray    *dateValues;
-@property (nonatomic, retain) NSMutableArray    *supplyYValues;
-@property (nonatomic, retain) NSMutableArray    *actualYValues;
-@property (nonatomic, retain) NSMutableArray    *forecastYValues;
+@property (nonatomic, strong) NSMutableArray    *dateValues;
+@property (nonatomic, strong) NSMutableArray    *supplyYValues;
+@property (nonatomic, strong) NSMutableArray    *actualYValues;
+@property (nonatomic, strong) NSMutableArray    *forecastYValues;
 - (void)_init;
 @end
 
@@ -31,7 +31,12 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     [self _init];
+    
+    /* InterfaceBuilderでフレームワークのクラスを認識できない問題の対処 */
+    [SimpleChartView class];
 
+    DBGMSG(@"%s simpleChartView:%@", __func__, self.simpleChartView);
+    DBGMSG(@"%s dataSource:%@", __func__, self.simpleChartView.dataSource);
 	self.simpleChartView.dataSource = self;
 
     NSNumberFormatter *numberFormatter = [NSNumberFormatter new];

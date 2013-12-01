@@ -10,6 +10,11 @@
 
 @class SimpleChartView;
 
+/*!
+ * @@protocol SimpleChartViewDataSource
+ * @abstract SimpleChartViewDataSourceプロトコル
+ * @discussion SimpleChartViewDataSourceのデリゲートの為のプロトコル。
+ */
 @protocol SimpleChartViewDataSource
 - (NSUInteger)numberOfPlotsInSimpleChartView:(SimpleChartView *)simpleChartView;
 - (NSUInteger)numberOfXValuesInSimpleChartView:(SimpleChartView *)simpleChartView;
@@ -24,6 +29,11 @@
 @optional
 @end
 
+/*!
+ * @class SimpleChartView
+ * @abstract SimpleChartViewクラス
+ * @discussion 単純なチャート・ビュー。
+ */
 @interface SimpleChartView : UIView
 
 @property (nonatomic, weak) IBOutlet id<SimpleChartViewDataSource, NSObject> dataSource;
