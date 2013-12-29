@@ -20,7 +20,8 @@
 		563E4FC915837BEC003FD099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563E4FAA15837BEC003FD099 /* Foundation.framework */; };
 		563E4FD115837BEC003FD099 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 563E4FCF15837BEC003FD099 /* InfoPlist.strings */; };
 		563E4FD415837BEC003FD099 /* SampleCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E4FD315837BEC003FD099 /* SampleCodeTests.m */; };
-		565F9208184B294800847DBA /* SimpleChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565F9207184B294800847DBA /* SimpleChart.framework */; };
+		56E3248E18704DA1007D7CBE /* SimpleChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E3248D18704DA1007D7CBE /* SimpleChart.framework */; };
+		56E32490187050B8007D7CBE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56E3248F187050B8007D7CBE /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +54,8 @@
 		563E4FD015837BEC003FD099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		563E4FD215837BEC003FD099 /* SampleCodeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleCodeTests.h; sourceTree = "<group>"; };
 		563E4FD315837BEC003FD099 /* SampleCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleCodeTests.m; sourceTree = "<group>"; };
-		565F9207184B294800847DBA /* SimpleChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleChart.framework; path = Framework/SimpleChart.framework; sourceTree = "<group>"; };
+		56E3248D18704DA1007D7CBE /* SimpleChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleChart.framework; path = Framework/SimpleChart.framework; sourceTree = "<group>"; };
+		56E3248F187050B8007D7CBE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,7 @@
 				563E4FA915837BEC003FD099 /* UIKit.framework in Frameworks */,
 				563E4FAB15837BEC003FD099 /* Foundation.framework in Frameworks */,
 				563E4FAD15837BEC003FD099 /* CoreGraphics.framework in Frameworks */,
-				565F9208184B294800847DBA /* SimpleChart.framework in Frameworks */,
+				56E3248E18704DA1007D7CBE /* SimpleChart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +108,7 @@
 				563E4FA815837BEC003FD099 /* UIKit.framework */,
 				563E4FAA15837BEC003FD099 /* Foundation.framework */,
 				563E4FAC15837BEC003FD099 /* CoreGraphics.framework */,
-				565F9207184B294800847DBA /* SimpleChart.framework */,
+				56E3248D18704DA1007D7CBE /* SimpleChart.framework */,
 				563E4FC615837BEC003FD099 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
@@ -120,6 +122,7 @@
 				563E4FBA15837BEC003FD099 /* MainStoryboard.storyboard */,
 				563E4FBD15837BEC003FD099 /* ViewController.h */,
 				563E4FBE15837BEC003FD099 /* ViewController.m */,
+				56E32491187050E7007D7CBE /* Resources */,
 				563E4FAF15837BEC003FD099 /* Supporting Files */,
 			);
 			path = SampleCode;
@@ -153,6 +156,14 @@
 				563E4FCF15837BEC003FD099 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56E32491187050E7007D7CBE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56E3248F187050B8007D7CBE /* Default-568h@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 			files = (
 				563E4FB315837BEC003FD099 /* InfoPlist.strings in Resources */,
 				563E4FBC15837BEC003FD099 /* MainStoryboard.storyboard in Resources */,
+				56E32490187050B8007D7CBE /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -356,7 +373,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -370,6 +392,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/yukio/Documents/Development/Projects/CocoaWorkbook/SimpleChart/Framework,
+					"/Users/yukio/Documents/Development/Projects/Cocoa練習帳/SimpleChart/Framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleCode/SampleCode-Prefix.pch";
@@ -388,6 +411,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/yukio/Documents/Development/Projects/CocoaWorkbook/SimpleChart/Framework,
+					"/Users/yukio/Documents/Development/Projects/Cocoa練習帳/SimpleChart/Framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleCode/SampleCode-Prefix.pch";
